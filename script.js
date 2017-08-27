@@ -2,8 +2,8 @@
 
 var doc = document,
 	valueRed = doc.getElementById('myColorRed'), //значение ползунка красного
-    valueGreen = doc.getElementById('myColorGreen'), //значение ползунка зеленого
-    valueBlue = doc.getElementById('myColorBlue'), //значение ползунка синего
+	valueGreen = doc.getElementById('myColorGreen'), //значение ползунка зеленого
+	valueBlue = doc.getElementById('myColorBlue'), //значение ползунка синего
 	palette = doc.getElementById('paletteField'), //поле цвета
 	paletteStyle = getComputedStyle(palette),//стили поля цвета
 	colorsCollection = doc.getElementById('collection'),//поле набора цветов
@@ -133,6 +133,7 @@ function choiceCell(event) {
 };
 
 /*------------------------------------------------------------*/
+//отмена всех шагов для данной ячейки
 /*var colorsArrCell_1 = [],
 	stepColorCell_1;*/
 
@@ -193,8 +194,6 @@ blank.addEventListener('click', getSteps);
 buttonPrevStep.addEventListener('click', goPrevStep);
 buttonResetBlank.addEventListener('click', resetBlank);
 buttonResetPalette.addEventListener('click', resetPalette);
-
-//test commit
 
 
 
