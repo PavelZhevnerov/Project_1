@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Coloring</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="wrapper">
+
+		<h1 class="title">
+			Проект &laquo;Раскраска&raquo;
+		</h1>
+
+		<div class="content">
+			<div class="blank" id="emptyBlank">
+				<div class="blank__item" data-cell="1"></div>
+				<div class="blank__item" data-cell="2"></div>
+				<div class="blank__item" data-cell="3"></div>
+				<div class="blank__item" data-cell="4"></div>
+				<div class="blank__item" data-cell="5"></div>
+				<div class="blank__item" data-cell="6"></div>
+				<div class="blank__item" data-cell="7"></div>
+				<div class="blank__item" data-cell="8"></div>
+				<div class="blank__item" data-cell="9"></div>
+			</div>
+
+			<div class="controls">
+				<h3 class="subtitle">
+					Палитра
+				</h3>
+				<div class="palette">
+					<div class="palette__controls">
+						<input id="myColorRed" type="range" min="0" max="255" step="1" value="0">
+						<label for="myColorRed">Red</label><br>
+						<input id="myColorGreen" type="range" min="0" max="255" step="1" value="0">
+						<label for="myColorGreen">Green</label><br>
+						<input id="myColorBlue" type="range" min="0" max="255" step="1" value="0">
+						<label for="myColorBlue">Blue</label>
+					</div>
+					<div class="palette__field" id="paletteField"></div>
+				</div>
+				<hr>
+				<button type="button" id="randomColor">Случайный цвет</button>
+				<hr>
+				<div class="collection" id="collection"></div>
+				<hr>
+				<h3 class="subtitle">
+					Очистка
+				</h3>
+				<button type="button" id="resetBlank">Очистить форму</button>
+				<button type="button" id="resetPalette">Очистить палитру</button>
+				<hr>
+				<h3 class="subtitle">
+					Шаги
+				</h3>
+				<button type="button" id="stepPrev">Назад</button>
+				<button type="button" id="stepNext" disabled>Вперед</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
