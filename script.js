@@ -194,6 +194,8 @@ buttonPrevStep.addEventListener('click', goPrevStep);
 buttonResetBlank.addEventListener('click', resetBlank);
 buttonResetPalette.addEventListener('click', resetPalette);
 
+//test commit
+
 
 
 
